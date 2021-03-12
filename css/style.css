@@ -101,6 +101,7 @@ a:hover {
 }
 .main {
   width: 100vw;
+  background-image: url("./img/curve.png");
   background-image: url("/img/curve.png");
   background-size: cover;
   background-position: center top;
