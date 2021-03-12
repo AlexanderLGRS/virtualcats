@@ -100,11 +100,11 @@ a:hover {
   font-size: var(--title-font);
 }
 .main {
-  border-top-left-radius:  100rem;
-  border-top-right-radius: 100rem;
+  /* border-top-left-radius:  100rem; */
+  /* border-top-right-radius: 100rem; */
+  /* background-color: #a7a7a742; */
+  background-image: url("../img/curve.png");
   width: 100vw;
-  /* background-image: url("/img/curve.png"); */
-  background-color: #a7a7a742;
   background-size: cover;
   background-position: center top;
   padding: 3rem;
