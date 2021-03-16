@@ -4,6 +4,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --green-color: #7acc2d;
+  --green-color2: #3f6b15;
+  --black-color: black;
+  --gray-color: rgb(168, 168, 168);
+  --white-color: white;
+  --title-font: 3rem;
+  --subtitle-font: 2rem;
+  --text-font: 1.5rem;
+}
 html {
   font-size: 62.5%;
 }
@@ -36,16 +46,6 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-track {
   border-radius: 10px;
-}
-:root {
-  --green-color: #7acc2d;
-  --green-color2: #3f6b15;
-  --black-color: black;
-  --gray-color: gray;
-  --white-color: white;
-  --title-font: 3rem;
-  --subtitle-font: 2rem;
-  --text-font: 1.5rem;
 }
 .header {
   width: 100vw;
@@ -92,9 +92,7 @@ body::-webkit-scrollbar-track {
   font-size: var(--title-font);
 }
 .main {
-  /* border-top-left-radius:  100rem; */
-  /* border-top-right-radius: 100rem; */
-  /* background-color: #a7a7a742; */
+  
   background-image: url("../img/curve.png");
   width: 100vw;
   background-size: cover;
@@ -137,6 +135,7 @@ body::-webkit-scrollbar-track {
   border-radius: 0.2rem;
   color: var(--white-color);
   font-weight: bold;
+  cursor: pointer;
 }
 .main__products__product button:hover {
   background-color: var(--green-color2);
@@ -176,6 +175,7 @@ body::-webkit-scrollbar-track {
   border-radius: 0.2rem;
   color: var(--white-color);
   font-weight: bold;
+  cursor: pointer;
 }
 .main__related__product button:hover {
   background-color: var(--gray-color);
@@ -205,6 +205,29 @@ body::-webkit-scrollbar-track {
 }
 .footer__list__item a:hover {
   color: var(--white-color);
+}
+.comments{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--gray-color);
+}
+.comments__item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  border: 0.2rem solid var(--black-color);
+  padding: 2rem;
+  width: 15rem;
+}
+.comments__item img{
+  margin-bottom: 1rem;
+  width: 12rem;
+}
+.comments__item__text{
 }
 @media only screen and (min-width: 600px) {
   .container {
