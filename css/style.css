@@ -10,7 +10,13 @@
   --black-color: black;
   --gray-color: rgb(168, 168, 168);
   --white-color: white;
-  --comments-color: #0051ff;
+  --comments-color: linear-gradient(
+    180deg,
+    #ececec 0%,
+    #003cff 90%,
+    var(--green-color2) 100%
+  );
+
   --title-font: 3rem;
   --subtitle-font: 2rem;
   --text-font: 1.5rem;
@@ -93,7 +99,6 @@ body::-webkit-scrollbar-track {
   font-size: var(--title-font);
 }
 .main {
-  
   background-image: url("../img/curve.png");
   width: 100vw;
   background-size: cover;
@@ -207,14 +212,15 @@ body::-webkit-scrollbar-track {
 .footer__list__item a:hover {
   color: var(--white-color);
 }
-.comments{
+.comments {
+  margin-top: -1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: var(--comments-color);
+  background-image: var(--comments-color);
 }
-.comments__item{
+.comments__item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -224,11 +230,11 @@ body::-webkit-scrollbar-track {
   padding: 2rem;
   width: 15rem;
 }
-.comments__item img{
+.comments__item img {
   margin-bottom: 1rem;
   width: 12rem;
 }
-.comments__item__text{
+.comments__item__text {
 }
 @media only screen and (min-width: 600px) {
   .container {
