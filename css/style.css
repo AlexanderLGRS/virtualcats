@@ -12,7 +12,7 @@
   --white-color: white;
   --comments-color: linear-gradient(
     180deg,
-    #ececec 0%,
+    #f4f4f4 0%,
     #003cff 90%,
     var(--green-color2) 100%
   );
