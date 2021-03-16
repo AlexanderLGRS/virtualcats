@@ -6,10 +6,11 @@
 }
 :root {
   --green-color: #7acc2d;
-  --green-color2: #7acc2d;
+  --green-color2: #3f6b15;
   --black-color: black;
   --gray-color: rgb(168, 168, 168);
   --white-color: white;
+  --comments-color: #0051ff;
   --title-font: 3rem;
   --subtitle-font: 2rem;
   --text-font: 1.5rem;
@@ -211,7 +212,7 @@ body::-webkit-scrollbar-track {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: var(--gray-color);
+  background-color: var(--comments-color);
 }
 .comments__item{
   display: flex;
