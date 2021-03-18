@@ -42,9 +42,12 @@
 .resumeContainer__row {
   margin-bottom: 5rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.resumeContainer__row img{
-    width: 14rem;
+.resumeContainer__row img {
+  width: 14rem;
+  margin: 2rem;
 }
 .resumeContainer__row span {
   font-size: var(--subtitle-font);
@@ -52,12 +55,35 @@
 }
 .resumeContainer__row p {
   font-size: var(--text-font);
-  padding: 0 3rem;
+  padding: 0 5rem;
 }
 .payModule {
   background-color: var(--white-color);
   box-shadow: 0.6rem 0.6rem 0.2rem #00000029;
   padding: 2rem;
+}
+.payModule label {
+  font-size: var(--text-font);
+}
+.payModule input {
+  margin-bottom: 2rem;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 0.2rem solid black;
+}
+.payModule .button {
+  background-color: var(--green-color);
+  border: none;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  border-radius: 0.2rem;
+  color: var(--white-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+.payModule .button:hover {
+  background-color: var(--green-color2);
 }
 .col-1 {
   width: 10%;
@@ -99,5 +125,9 @@
 @media only screen and (min-width: 800px) {
   .rowContainer__row {
     margin-bottom: 10rem;
+  }
+  .resumeContainer__row {
+    display: flex;
+    flex-direction: row;
   }
 }
