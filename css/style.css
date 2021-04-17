@@ -10,12 +10,7 @@
   --black-color: black;
   --gray-color: rgb(168, 168, 168);
   --white-color: white;
-  --comments-color: linear-gradient(
-    180deg,
-    #f4f4f4 0%,
-    #003cff 90%,
-    var(--green-color2) 100%
-  );
+  --comments-color: #ededed;
 
   --title-font: 3rem;
   --subtitle-font: 2rem;
@@ -68,7 +63,7 @@ body::-webkit-scrollbar-track {
 }
 .header__nav__logo {
   margin: 0 1rem;
-  width: 7.5rem;
+  width: 361px;
   height: 2.7rem;
 }
 .header__nav__list {
